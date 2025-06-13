@@ -1,0 +1,57 @@
+Index: app/src/main/java/com/plcoding/echojournal/ui/theme/Color.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/plcoding/echojournal/ui/theme/Color.kt b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Color.kt
+rename from app/src/main/java/com/plcoding/echojournal/ui/theme/Color.kt
+rename to app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Color.kt
+--- a/app/src/main/java/com/plcoding/echojournal/ui/theme/Color.kt	(revision 9be7dda975429decb40f95a4bc6003d3bb06a0c7)
++++ b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Color.kt	(date 1749247142679)
+@@ -1,5 +1,6 @@
+-package com.plcoding.echojournal.ui.theme
++package com.plcoding.echojournal.core.presentation.designsystem.theme
+ 
++import androidx.compose.material3.ColorScheme
+ import androidx.compose.ui.graphics.Color
+ 
+ val Purple80 = Color(0xFFD0BCFF)
+@@ -8,4 +9,4 @@
+ 
+ val Purple40 = Color(0xFF6650a4)
+ val PurpleGrey40 = Color(0xFF625b71)
+-val Pink40 = Color(0xFF7D5260)
+\ No newline at end of file
++val Pink40 = Color(0xFF7D5260)
+Index: app/src/main/java/com/plcoding/echojournal/ui/theme/Type.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/plcoding/echojournal/ui/theme/Type.kt b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Type.kt
+rename from app/src/main/java/com/plcoding/echojournal/ui/theme/Type.kt
+rename to app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Type.kt
+--- a/app/src/main/java/com/plcoding/echojournal/ui/theme/Type.kt	(revision 9be7dda975429decb40f95a4bc6003d3bb06a0c7)
++++ b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Type.kt	(date 1749246910603)
+@@ -1,4 +1,4 @@
+-package com.plcoding.echojournal.ui.theme
++package com.plcoding.echojournal.core.presentation.designsystem.theme
+ 
+ import androidx.compose.material3.Typography
+ import androidx.compose.ui.text.TextStyle
+Index: app/src/main/java/com/plcoding/echojournal/ui/theme/Theme.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/plcoding/echojournal/ui/theme/Theme.kt b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Theme.kt
+rename from app/src/main/java/com/plcoding/echojournal/ui/theme/Theme.kt
+rename to app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Theme.kt
+--- a/app/src/main/java/com/plcoding/echojournal/ui/theme/Theme.kt	(revision 9be7dda975429decb40f95a4bc6003d3bb06a0c7)
++++ b/app/src/main/java/com/plcoding/echojournal/core/presentation/designsystem/theme/Theme.kt	(date 1749246910611)
+@@ -1,4 +1,4 @@
+-package com.plcoding.echojournal.ui.theme
++package com.plcoding.echojournal.core.presentation.designsystem.theme
+ 
+ import android.app.Activity
+ import android.os.Build

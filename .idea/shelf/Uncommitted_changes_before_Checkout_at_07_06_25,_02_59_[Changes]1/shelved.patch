@@ -1,0 +1,19 @@
+Index: app/src/main/java/com/plcoding/echojournal/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.plcoding.echojournal\n\nimport android.os.Bundle\nimport androidx.activity.ComponentActivity\nimport androidx.activity.compose.setContent\nimport androidx.activity.enableEdgeToEdge\nimport androidx.compose.foundation.layout.fillMaxSize\nimport androidx.compose.foundation.layout.padding\nimport androidx.compose.material3.Scaffold\nimport androidx.compose.material3.Text\nimport androidx.compose.runtime.Composable\nimport androidx.compose.ui.Modifier\nimport androidx.compose.ui.tooling.preview.Preview\nimport com.plcoding.echojournal.ui.theme.EchoJournalTheme\n\nclass MainActivity : ComponentActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        enableEdgeToEdge()\n        setContent {\n            EchoJournalTheme {\n                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->\n                    Greeting(\n                        name = \"Android\",\n                        modifier = Modifier.padding(innerPadding)\n                    )\n                }\n            }\n        }\n    }\n}\n\n@Composable\nfun Greeting(name: String, modifier: Modifier = Modifier) {\n    Text(\n        text = \"Hello $name!\",\n        modifier = modifier\n    )\n}\n\n@Preview(showBackground = true)\n@Composable\nfun GreetingPreview() {\n    EchoJournalTheme {\n        Greeting(\"Android\")\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/plcoding/echojournal/MainActivity.kt b/app/src/main/java/com/plcoding/echojournal/MainActivity.kt
+--- a/app/src/main/java/com/plcoding/echojournal/MainActivity.kt	(revision 9be7dda975429decb40f95a4bc6003d3bb06a0c7)
++++ b/app/src/main/java/com/plcoding/echojournal/MainActivity.kt	(date 1749246910619)
+@@ -11,7 +11,7 @@
+ import androidx.compose.runtime.Composable
+ import androidx.compose.ui.Modifier
+ import androidx.compose.ui.tooling.preview.Preview
+-import com.plcoding.echojournal.ui.theme.EchoJournalTheme
++import com.plcoding.echojournal.core.presentation.designsystem.theme.EchoJournalTheme
+ 
+ class MainActivity : ComponentActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
